@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Карусель</title>
+	<style>
+		body {
+		margin: 0 auto;
+		width: 1200px;
+		}
+
+		.slider {
+		padding: 10px;
+		min-height: 150px;
+		background: #bad0db;		
+		border: solid 1px;
+		border-radius: 20px;
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 580px;
+		flex: 0 0 auto;
+		}
+
+		.slider ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex: 0 0 auto;
+		padding: 0 25px;
+		}
+
+		.slider li {
+		list-style: none;
+		}
+
+		.arrow {		
+		background: #bad0db;
+		font-size: 20px;
+		border: solid 1px;
+		border-radius: 50%; 
+		cursor: pointer;
+		height: 30px;
+		width: 30px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		}
+		
+		.arrow:hover {
+			background: #cde5f2;
+		}
+
+		.slider img{
+			width: 130px;
+			height: 130px;
+		}
+
+	</style>
+</head>
+<body>
+<h1>Карусель</h1>
+
+
+
+
+	<div id="slider" class="slider">		
+		<button class="arrow" id="leftbutton"> ⇦ </button>
+		<ul>
+			<li><img src="https://ru.js.cx/carousel/1.png"></li>
+			<li><img src="https://ru.js.cx/carousel/2.png"></li>
+			<li><img src="https://ru.js.cx/carousel/3.png"></li>
+			<li><img src="https://ru.js.cx/carousel/4.png"></li>
+			<li><img src="https://ru.js.cx/carousel/5.png"></li>
+			<li><img src="https://ru.js.cx/carousel/6.png"></li>
+			<li><img src="https://ru.js.cx/carousel/7.png"></li>
+			<li><img src="https://ru.js.cx/carousel/8.png"></li>
+			<li><img src="https://ru.js.cx/carousel/9.png"></li>
+			<li><img src="https://ru.js.cx/carousel/10.png"></li>
+		</ul>
+		<button class="arrow" id="rightbutton"> ⇨ </button>
+	</div>
+		
+	<script src="./js/alert.js"></script>
+</body>
+</html>

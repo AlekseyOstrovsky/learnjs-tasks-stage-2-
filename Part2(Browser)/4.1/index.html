@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		#contents {
+		  padding: 5px;
+		  border: 1px green solid;
+		}
+	 </style>
+</head>
+<body>
+	<h1>Добавьте пункт к выпадающему списку</h1>
+	<p>
+		Используя JavaScript: <br>
+
+		Выведите значение и текст выбранного пункта. <br>
+		Добавьте пункт: <code> &lt;option value="classic"&gt;Классика&lt;/option&gt;</code>. <br>
+		Сделайте его выбранным.
+	</p>
+	<select id="genres">
+		<option value="rock">Рок</option>
+		<option value="blues" selected>Блюз</option>
+	</select>
+	<br>
+	<button onclick="showSelected()">Показать выбранные options</button>
+	<br>
+	<button onclick="addOption()">Добавить пункт</button>
+	<script src="./js/alert.js"></script>
+</body>
+</html>

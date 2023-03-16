@@ -1,0 +1,23 @@
+.edit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: none;
+  resize: none;
+  outline: none;
+}
+
+.edit__ok {
+  position: absolute;
+  left: 0px;
+}
+
+.edit__cancel {
+  position: absolute;
+  left: 50px;
+}
+
+.edited {
+  position: relative;
+  padding: 0;
+}
