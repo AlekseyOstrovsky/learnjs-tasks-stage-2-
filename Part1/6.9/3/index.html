@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Декоратор debounce</h1>
+	<p>Результатом декоратора debounce(f, ms) должна быть обёртка,
+		которая передаёт вызов f не более одного раза в ms миллисекунд.
+		Другими словами, когда мы вызываем debounce, это гарантирует,
+		что все остальные вызовы будут игнорироваться в течение ms. <br>
+		Например: <br>
+		let f = debounce(alert, 1000); <br>				
+		f(1); // выполняется немедленно<br>
+		f(2); // проигнорирован<br>
+		setTimeout( () => f(3), 100); // проигнорирован (прошло только 100 мс)<br>
+		setTimeout( () => f(4), 1100); // выполняется<br>
+		setTimeout( () => f(5), 1500); // проигнорирован (прошло только 400 мс от последнего вызова)
+	</p>
+	<script src="./js/alert.js"></script>
+</body>
+</html>
